@@ -27,11 +27,11 @@ public class getReleaseInfo {
 
     public static void main(String[] args) throws IOException, JSONException {
 
-        String projName ="Bookkeeper";
+        String projName ="QPID";
         //Fills the arraylist with releases dates and orders them
         //Ignores releases with missing dates
-        releases = new ArrayList<LocalDateTime>();
-        Integer i;
+        releases = new ArrayList<>();
+        int i;
         String url = "https://issues.apache.org/jira/rest/api/2/project/" + projName;
         JSONObject json = readJsonFromUrl(url);
         JSONArray versions = json.getJSONArray("versions");
