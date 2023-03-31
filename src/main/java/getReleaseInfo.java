@@ -5,13 +5,9 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.net.URL;
 import java.nio.charset.Charset;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Set;
-import java.util.Map;
-import java.util.List;
 import java.util.Collections;
 import java.util.Comparator;
 import java.time.LocalDate;
@@ -31,7 +27,7 @@ public class getReleaseInfo {
 
     public static void main(String[] args) throws IOException, JSONException {
 
-        String projName ="QPID";
+        String projName ="Bookkeeper";
         //Fills the arraylist with releases dates and orders them
         //Ignores releases with missing dates
         releases = new ArrayList<LocalDateTime>();
