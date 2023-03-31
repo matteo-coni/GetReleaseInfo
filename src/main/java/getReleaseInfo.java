@@ -28,6 +28,7 @@ public class getReleaseInfo {
     public static void main(String[] args) throws IOException, JSONException {
 
         String projName ="QPID";
+        String ciao="ciao";
         //Fills the arraylist with releases dates and orders them
         //Ignores releases with missing dates
         releases = new ArrayList<>();
